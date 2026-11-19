@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="320" viewBox="0 0 1050 320" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitectura del vehículo autónomo</title>
+  <desc id="desc">La cámara alimenta al Brain sobre Jetson Orin Nano. Brain envía comandos por UART a la VCU sobre ESP32 y recibe eventos. La VCU controla motor y dirección y recibe la señal del sensor ultrasónico.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#576574"/></marker>
+  </defs>
+  <rect x="1" y="1" width="1048" height="318" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+  <g fill="none" stroke="#576574" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M 144 116 H 202"/>
+    <path d="M 442 99 H 620"/>
+    <path d="M 620 143 H 442"/>
+    <path d="M 860 116 H 918"/>
+    <path d="M 740 232 V 164"/>
+  </g>
+  <g fill="#fff" stroke="#8c959f" stroke-width="1.5">
+    <rect x="24" y="80" width="120" height="72" rx="8"/>
+    <rect x="202" y="68" width="240" height="96" rx="8" stroke="#0969da"/>
+    <rect x="620" y="68" width="240" height="96" rx="8" stroke="#0969da"/>
+    <rect x="918" y="80" width="108" height="72" rx="8"/>
+    <rect x="620" y="232" width="240" height="62" rx="8"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#1f2328">
+    <text x="84" y="122" font-size="19" font-weight="600">Cámara</text>
+    <text x="322" y="96" font-size="20" font-weight="700">Brain</text>
+    <text x="322" y="121" font-size="17">Jetson Orin Nano</text>
+    <text x="322" y="146" font-size="16" fill="#57606a">Percepción y navegación</text>
+    <text x="740" y="96" font-size="20" font-weight="700">VCU</text>
+    <text x="740" y="121" font-size="17">ESP32 / FreeRTOS</text>
+    <text x="740" y="146" font-size="16" fill="#57606a">Control y supervisión</text>
+    <text x="972" y="109" font-size="17" font-weight="600">Motor</text>
+    <text x="972" y="133" font-size="17">y dirección</text>
+    <text x="740" y="269" font-size="18" font-weight="600">Sensor ultrasónico</text>
+    <text x="531" y="87" font-size="16" fill="#57606a">Comandos UART</text>
+    <text x="531" y="168" font-size="16" fill="#57606a">Eventos UART</text>
+    <text x="762" y="205" text-anchor="start" font-size="16" fill="#57606a">Proximidad</text>
+  </g>
+</svg>
