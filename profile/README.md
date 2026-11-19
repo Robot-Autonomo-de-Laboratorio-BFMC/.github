@@ -21,14 +21,7 @@ Desarrollamos una plataforma que integra **visión artificial, navegación y con
 
 Dos computadoras separan la percepción y las decisiones del control de los actuadores:
 
-```mermaid
-flowchart LR
-    CAM["Cámara"] --> BRAIN["Brain · Jetson Orin Nano<br/>Percepción y navegación"]
-    BRAIN -->|Comandos UART| VCU["VCU · ESP32 / FreeRTOS<br/>Control y supervisión"]
-    VCU -->|Eventos UART| BRAIN
-    US["Sensor ultrasónico"] --> VCU
-    VCU --> ACT["Motor y dirección"]
-```
+![Arquitectura: cámara a Brain sobre Jetson; comandos y eventos UART entre Brain y VCU sobre ESP32; sensor ultrasónico a VCU; VCU a motor y dirección](https://raw.githubusercontent.com/Robot-Autonomo-de-Laboratorio-BFMC/.github/main/profile/assets/architecture.svg)
 
 **Brain** combina detección de carril con OpenCV, control lateral PID, detección de señales con YOLO y estrategias de maniobra. Su dashboard web permite visualizar video, ajustar parámetros y supervisar el vehículo.
 
